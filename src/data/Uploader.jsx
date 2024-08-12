@@ -76,7 +76,7 @@ async function createBookings() {
     };
   });
 
-  console.log(finalBookings);
+  // console.log(finalBookings);
 
   const { error } = await supabase.from('Bookings').insert(finalBookings);
   if (error) console.log(error.message);
@@ -117,25 +117,25 @@ export function Uploader() {
         textAlign: 'center',
       }}
     >
-      <h3>DEV AREA</h3>
+      {/* <h3>DEV AREA</h3> */}
 
-      <Button
+      {/* <Button
         onClick={uploadAll}
         // To prevent accidental clicks. Remove to run once!
         disabled={isLoading}
         // disabled={true}
       >
         Upload ALL sample data
-      </Button>
-      <p style={{ fontSize: '10px' }}>Only run this only once!</p>
-      <p style={{ fontSize: '10px' }}>
+      </Button> */}
+      {/* <p style={{ fontSize: '10px' }}>Only run this only once!</p> */}
+      {/* <p style={{ fontSize: '10px' }}>
         <em>(Cabin images need to be uploaded manually)</em>
-      </p>
-      <hr />
+      </p> */}
+      {/* <hr /> */}
       <Button onClick={uploadBookings} disabled={isLoading}>
-        Upload CURRENT bookings
+        generate content
       </Button>
-      <p style={{ fontSize: '10px' }}>You can run this every day you develop the app</p>
+      {/* <p style={{ fontSize: '10px' }}>You can run this every day you develop the app</p> */}
     </div>
   );
 }
