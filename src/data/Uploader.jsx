@@ -133,7 +133,7 @@ export function Uploader() {
       </p> */}
       {/* <hr /> */}
       <Button onClick={uploadBookings} disabled={isLoading}>
-        generate content
+        {isLoading ? 'Generating...': 'generate content'}
       </Button>
       {/* <p style={{ fontSize: '10px' }}>You can run this every day you develop the app</p> */}
     </div>
